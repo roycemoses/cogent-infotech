@@ -19,6 +19,7 @@ public class ProductDAO {
 	
 	public void read(Product[] products)
 	{
+		if (products == null) return;
 		for(Product product:products)
 		{
 			if (product == null)
@@ -33,6 +34,12 @@ public class ProductDAO {
 	public void update(Product[] products, int productID)
 	{
 		int currProductIndex = findProductIndex(products, productID);
+		
+		if (currProductIndex == -1)
+		{
+			System.out.println("Product #" + productID + " does not exist. Returning to main menu...");
+			return;
+		}
 		
 		System.out.println("Please enter the updated details for Product #" + productID + "!");
 		
@@ -71,16 +78,22 @@ public class ProductDAO {
 		System.out.println("\nProduct #" + productID + " has successfully been updated.");
 	}
 	
-	public void delete(Product[] products, int ProductID)
+	public void delete(Product[] products, int productID)
 	{
-		int currProductIndex = findProductIndex(products, ProductID);
+		int currProductIndex = findProductIndex(products, productID);
+		if (currProductIndex == -1)
+		{
+			System.out.println("Product #" + productID + " does not exist. Returning to main menu...");
+			return;
+		}
 		products[currProductIndex] = null;
-		System.out.println("\nProduct #" + ProductID + " has successfully been deleted.");
+		System.out.println("\nProduct #" + productID + " has successfully been deleted.");
 	}
 	
 	private int findProductIndex(Product[] products, int productID)
 	{
-		int index = 0;
+		int index = -1;
+		if (products == null) return index;
 		for(int i = 0; i < products.length; i++)
 		{
 			if (products[i] == null)

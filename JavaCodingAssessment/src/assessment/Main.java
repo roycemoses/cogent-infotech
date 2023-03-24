@@ -44,6 +44,7 @@ public class Main {
 					dao.delete(products, productID);
 					break;
 				case 5:
+					System.out.println("Thank you. Goodbye!");
 					System.exit(0);
 					break;
 			}
