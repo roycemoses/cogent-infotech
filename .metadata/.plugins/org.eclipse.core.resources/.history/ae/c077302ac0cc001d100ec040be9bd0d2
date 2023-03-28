@@ -1,0 +1,16 @@
+package exceptions;
+
+public class InvalidAgeExceptionTest {
+
+	validateAge(int age) throws InvalidAgeException
+	{
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+package super_demo;
+
+class Parent
+{
+	int age;
+	
+	public void display()
+	{
+		System.out.println("Parent Age: " + age);
+	}
+}
+
+public class SuperDemo {
+
+	
+	
+}

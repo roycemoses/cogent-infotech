@@ -1,0 +1,10 @@
+package inheritance;
+
+class GrandFather
+{
+	
+}
+
+public class MultilevelInheritance {
+
+}

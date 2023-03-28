@@ -1,0 +1,21 @@
+package access_modifiers;
+
+public class StaticDemo {
+
+	private static int age; // variable that always belongs to the class
+	
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
+	public int getAge()
+	{
+		return this.age;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(StaticDemo.age);
+	}
+	
+}

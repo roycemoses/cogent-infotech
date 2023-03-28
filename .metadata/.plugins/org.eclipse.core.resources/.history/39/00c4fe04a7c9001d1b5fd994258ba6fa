@@ -1,0 +1,40 @@
+package access_modifiers;
+
+import java.util.Scanner;
+
+public class BookTest {
+	
+	public static void createBooks(Book[] books, int n)
+	{
+		Scanner sc = new Scanner(System.in);
+		books1[0].setBook_price(2f);
+	}
+	
+	public static void showBooks(Book[] books)
+	{
+		System.out.println("Book Title\t\tPrice");
+		for(int i = 0; i < books.length; i++)
+		{
+			System.out.println(books[i].getBook_title() + "\tRs." + books[i].getBook_price());
+		}
+	}
+	
+	public static void main(String[] args) {
+		int n = 1;
+		Book[] books = new Book[n];
+		createBooks(books, n);
+		System.out.println(books[0].getBook_price());
+//				.setBook_title("Java Programming");
+//		books[0].setBook_price(350.50f);
+//		books[1].setBook_title("Let Us C");
+//		books[1].setBook_price(200.00f);
+//		books[2].setBook_title("Python asdfasdf");
+//		books[3].setBook_price(123.00f);
+		
+		
+		
+		
+	}
+	
+	
+}

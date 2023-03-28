@@ -1,0 +1,24 @@
+package cogent.infotech;
+
+public class PersonDAO {
+
+	public void create()
+	{
+		
+	}
+	
+	public void read()
+	{
+		
+	}
+	
+	public void update()
+	{
+		
+	}
+	
+	public void delete()
+	{
+		
+	}
+}

@@ -1,0 +1,12 @@
+package access_specifiers;
+
+public class Product_Default_Test {
+
+	public static void main(String[] args) {
+		
+		Product p = new Product(1001, "T-Shirt", 50.23f);
+		p.showProductInfo();
+		
+	}
+	
+}

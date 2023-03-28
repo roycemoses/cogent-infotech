@@ -1,0 +1,15 @@
+package serialization;
+
+import java.io.FileInputStream;
+
+public class DeserializationDemo {
+
+	public static void main(String[] args) {
+		
+		FileInputStream fis = new FileInputStream("D://Users//Rice//Documents//CogentWorkspace//TextFiles//Emp.ser")
+		ObjectInputStream ois = new ObjectInputStream(fis)
+		
+		
+	}
+	
+}

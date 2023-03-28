@@ -1,0 +1,11 @@
+package test;
+
+public class classB extends classA {
+	
+	public int getX() { return super.x };
+	
+	public void display() {
+		System.out.println("x: " + this.x);
+	}
+	
+}

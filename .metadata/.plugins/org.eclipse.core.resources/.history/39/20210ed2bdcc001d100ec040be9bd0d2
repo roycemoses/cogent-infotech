@@ -1,0 +1,25 @@
+package exceptions;
+
+
+class Arithmetic
+{
+	public void division(int x, int y) throws ArithmeticException
+	{
+		int z = x / y;
+		System.out.println(z);
+	}	
+}
+
+public class ThrowsDemo {
+
+	public static void main(String[] args) {
+		
+		try
+		{
+			division();
+		}
+		
+		
+	}
+	
+}

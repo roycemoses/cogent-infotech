@@ -1,0 +1,22 @@
+package serialization;
+
+import java.util.Scanner;
+
+public class PersonDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		char option;
+		do
+		{
+			System.out.println("____ENTER PERSON DETAILS____");
+			System.out.println("Roll number:");
+			Integer.parseInt(sc.nextLine());
+			
+			option = sc.nextLine().charAt(0);
+		} while (option == 'Y' || option == 'y')
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+package exceptions_calc;
+
+import java.util.Scanner;
+
+public class NumberDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter two integers: ");
+		int a = Integer.parseInt(sc.nextLine());
+		int b = Integer.parseInt(sc.nextLine());
+		
+		
+	}
+	
+}

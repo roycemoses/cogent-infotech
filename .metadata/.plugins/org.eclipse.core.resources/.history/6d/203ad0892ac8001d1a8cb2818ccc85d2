@@ -1,0 +1,13 @@
+package inheritance;
+
+class GrandFather
+{
+	int grandFatherAge;
+	public GrandFather(int grandfatherAge) {
+		this.grandFatherAge = grandfatherAge;
+	}
+}
+
+public class MultilevelInheritance {
+
+}

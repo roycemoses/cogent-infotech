@@ -1,0 +1,9 @@
+package exceptions_calc;
+
+public class Number {
+
+	int firstNum;
+	int secondNum;
+	
+	
+}

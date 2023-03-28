@@ -1,0 +1,17 @@
+package multithreading;
+
+public class JoinDemo {
+
+	static int n, sum = 0;
+	
+	public static void main(String[] args) {
+		
+		long start = System.currentTimeMillis();
+		System.out.println("Sum of 'N' numbers: ");
+		System.out.println("Enter an integer (n): ");
+		
+		
+		
+	}
+	
+}

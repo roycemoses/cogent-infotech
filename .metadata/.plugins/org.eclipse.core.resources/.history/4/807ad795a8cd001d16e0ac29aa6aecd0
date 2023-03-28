@@ -1,0 +1,15 @@
+package multithreading_demo;
+
+public class ThreadDemo {
+
+	public static void main(String[] args) {
+	
+		MyThread thread1 = new MyThread();
+		MyThread thread2 = new MyThread();
+		
+		
+		
+		
+	}
+	
+}

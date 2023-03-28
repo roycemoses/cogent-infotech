@@ -1,0 +1,21 @@
+package serialization;
+
+public class SerializationDemo {
+
+	public static void main(String[] args) {
+		
+		FileOutputStream fos = null;
+		ObjectOutputStream oos = null;
+		try
+		{
+			
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		
+	}
+	
+}

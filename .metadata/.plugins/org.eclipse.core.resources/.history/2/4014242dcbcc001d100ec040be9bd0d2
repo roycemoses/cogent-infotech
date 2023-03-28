@@ -1,0 +1,14 @@
+package exceptions_calc;
+
+public class Number {
+
+	int a;
+	int b;
+	double result; // stores the result of arithmetic operations performed on a and b
+	
+	Number(int a, int b) { this.a = a; this.b = b;  }
+	void add() { this.result = this.a + this.b }
+	void 
+	
+	
+}

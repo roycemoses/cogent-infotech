@@ -1,0 +1,11 @@
+package cogent.infotech;
+
+public class BankTest {
+	public static void main(String[] args) {
+		
+		SBIBank bank = new SBIBank();
+		bank.getRateOfInterest();
+		
+		
+	}
+}

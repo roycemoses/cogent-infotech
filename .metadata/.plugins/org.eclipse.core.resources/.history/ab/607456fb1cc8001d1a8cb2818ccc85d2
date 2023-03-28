@@ -1,0 +1,9 @@
+package cogent;
+
+public class BookTest {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(in);
+		
+	}
+}

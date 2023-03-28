@@ -1,0 +1,33 @@
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		
+//		String s1 = "Hello";
+//		String s2 = "Hello";
+//		String s3 = s2;
+//		String s4 = new String("Hello");
+//		
+//		if (s3 == s4)
+//			System.out.println("Both strings are equal");
+//		else
+//			System.out.println("Strings are not equal");
+		
+		// does not work, strings are immutable
+//		String firstName = "Royce";
+//		firstName.concat(firstName);
+//		System.out.println(firstName);
+		
+		// works, because this initializes in memory correctly
+//		String firstName = "Royce";
+//		String fullName = firstName.concat("Moses");
+//		System.out.println(fullName);
+		
+		String firstName = "Royce";
+		int l = firstName.length;
+		System.out.println("Length of string is: " + l);
+		
+		
+	}
+
+}

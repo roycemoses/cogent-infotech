@@ -1,0 +1,40 @@
+package polymorphism;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Car c = new Car();
+		c.drive(200, 6);
+		
+		
+		
+		
+		
+		
+//		Person p;
+//		p = new Person();
+//		p.setName("John");
+//		p.interact();
+//		
+//		p = new Parent();
+//		p.setName("John");
+//		p.interact();
+//		
+//		p = new Wife();
+//		p.setName("John");
+//		p.interact();
+//		
+//		p = new Child();
+//		p.setName("John");
+//		p.interact();
+//		
+//		p = new Colleague();
+//		p.setName("John");
+//		p.interact();
+		
+		
+		
+	}
+	
+}

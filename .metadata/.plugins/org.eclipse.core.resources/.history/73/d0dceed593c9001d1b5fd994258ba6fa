@@ -1,0 +1,8 @@
+package esg.itp.shape;
+
+interface Polygon {
+	abstract void calcArea();
+	abstract void calcPeri();	
+	void display();
+	
+}

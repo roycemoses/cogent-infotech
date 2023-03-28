@@ -1,0 +1,9 @@
+package assessment;
+
+public class Product {
+
+	int id;
+	
+	
+	
+}

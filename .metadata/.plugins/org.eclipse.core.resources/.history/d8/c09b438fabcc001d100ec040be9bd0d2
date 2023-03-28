@@ -1,0 +1,19 @@
+package wrapper_classes;
+
+public class WrapperDemo {
+
+	public static void main(String[] args) {
+		
+		int x = 100; // primitive
+		Integer y = Integer.valueOf(x); // boxing
+		
+		int z = Integer.parseInt(y.toString());
+		
+		
+		System.out.println(y.getClass().getName());
+		
+		
+
+	}
+	
+}

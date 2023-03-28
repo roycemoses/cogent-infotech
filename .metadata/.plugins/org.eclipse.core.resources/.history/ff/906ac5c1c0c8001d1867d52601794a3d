@@ -1,0 +1,12 @@
+package polymorphism;
+
+public class Car {
+	
+	double speed;
+	int noOfGears;
+	
+	public void drive(double speed, int noOfGears) {
+		
+	}
+	
+}

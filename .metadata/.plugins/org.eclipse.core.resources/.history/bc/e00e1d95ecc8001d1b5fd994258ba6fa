@@ -1,0 +1,20 @@
+package instrument_abstraction;
+
+import java.util.Random;
+
+public class Main {
+	public static void main(String[] args) {
+	
+// 		cannot instantiate Instrument object
+//		Instrument instrument = new Instrument();
+		
+		Instrument[] instruments = new Instrument[10];
+		Random rand = new Random();
+		int option = 0;
+		
+		
+		
+		
+		
+	}
+}

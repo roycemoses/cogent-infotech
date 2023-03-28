@@ -1,0 +1,7 @@
+package cogent.infotech;
+
+public class Bicycle {
+
+	abstract void changeCadence(int newValue);
+		
+}

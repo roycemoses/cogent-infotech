@@ -1,0 +1,47 @@
+package serialization;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.util.Scanner;
+
+public class PersonSerializationDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		FileOutputStream fos = null;
+		ObjectOutputStream oos = null;
+		char option;
+		try
+		{
+			do
+			{
+				System.out.println("____ENTER PERSON DETAILS____");
+				System.out.println("Roll number:");
+				int rollNum = Integer.parseInt(sc.nextLine()); // sc.nextInt ?
+				System.out.println("Name:");
+				String name = sc.nextLine();
+				System.out.println("Age:");
+				int age = Integer.parseInt(sc.nextLine());
+				System.out.println("Address:");
+				String address = sc.nextLine();
+				
+				Person person = new Person(rollNum, name, age, address);
+				fos = new FileOutputStream("D://Users//Rice//Documents//CogentWorkspace//TextFiles//Person.ser");
+				oos = new ObjectOutputStream(fos);
+				
+				option = sc.nextLine().charAt(0);
+			} while (option == 'Y' || option == 'y')
+		}
+		catch (NumberFormatException e)
+		{
+			System.out.println(e);
+		}
+		catch (CustomBlankFieldException e)
+		{
+			System.out.println(e);
+		}
+		
+	}
+	
+}

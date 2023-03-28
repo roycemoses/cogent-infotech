@@ -1,0 +1,10 @@
+package cogent.infotech;
+
+public class Person {
+
+	private int personID;
+	String personName;
+	String personAddress;
+	
+	
+}

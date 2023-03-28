@@ -1,0 +1,14 @@
+package cogent.infotech;
+
+public abstract class Bank {
+	// abstract method
+	abstract float getRateOfInterest();
+}
+
+class SBIBank extends Bank {
+	float rateOfInterest = 7.25f;
+	float getRateOfInterest()
+	{
+		return rateOfInterest;
+	}
+}

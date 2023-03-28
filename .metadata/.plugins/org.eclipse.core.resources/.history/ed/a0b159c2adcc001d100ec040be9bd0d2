@@ -1,0 +1,21 @@
+package wrapper_classes;
+
+public class ConversionOfAllPrimitivesAndWrappers {
+
+	boolean bool = true;
+	Boolean Bool = Boolean.valueOf(bool);
+	boolean bool2 = Bool.booleanValue();
+	
+	byte bt = 20;
+	Byte Bt = Byte.valueOf(bt);
+	byte bt2 = Bt.byteValue();
+	
+	char
+	short
+	int
+	long
+	float
+	double
+	
+	
+}

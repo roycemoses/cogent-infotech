@@ -1,0 +1,16 @@
+package wrapper_classes;
+
+public class ConversionOfAllPrimitivesAndWrappers {
+
+	boolean bool = true;
+	
+	byte
+	char
+	short
+	int
+	long
+	float
+	double
+	
+	
+}

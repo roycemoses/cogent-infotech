@@ -1,0 +1,8 @@
+package multithreading_demo;
+
+public class ThreadDemo {
+
+	MyThread thread1 = new MyThread();
+	
+	
+}

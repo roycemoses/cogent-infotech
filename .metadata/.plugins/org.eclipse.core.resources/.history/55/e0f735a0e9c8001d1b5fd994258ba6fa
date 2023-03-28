@@ -1,0 +1,10 @@
+package abstraction;
+
+public class BicycleTest {
+
+	Bicycle bicycle = new ACMEBicycle();
+	
+//	ACMEBicycle bicycle = new ACMEBicycle();
+	
+	
+}

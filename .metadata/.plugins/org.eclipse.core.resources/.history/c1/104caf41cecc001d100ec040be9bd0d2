@@ -1,0 +1,14 @@
+package exceptions_calc;
+
+public class UserDefinedExceptions {
+
+	class NegativeAmountException extends Exception {
+
+		public NegativeAmountException(String s)
+		{
+			super(s);
+		}
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package abstraction_compartment;
+
+public class TestCompartment {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

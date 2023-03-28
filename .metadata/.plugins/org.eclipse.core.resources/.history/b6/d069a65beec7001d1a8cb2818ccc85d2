@@ -1,0 +1,23 @@
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		
+//		String s1 = "Hello";
+//		String s2 = "Hello";
+//		String s3 = s2;
+//		String s4 = new String("Hello");
+//		
+//		if (s3 == s4)
+//			System.out.println("Both strings are equal");
+//		else
+//			System.out.println("Strings are not equal");
+		
+		String firstName = "Royce";
+		firstName.concat(firstName);
+		System.out.println(firstName);
+		
+		
+	}
+
+}

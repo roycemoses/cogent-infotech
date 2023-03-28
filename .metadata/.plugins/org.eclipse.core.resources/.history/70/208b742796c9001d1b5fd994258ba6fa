@@ -1,0 +1,16 @@
+package access_modifiers;
+
+public class StaticDemo {
+
+	private static int age;
+	
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

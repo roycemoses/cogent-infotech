@@ -1,0 +1,14 @@
+package polymorphism;
+
+public class TestMedicine {
+
+	public static void main(String[] args) {
+		
+		Medicine[] meds = new Medicine[10];
+		
+		
+		
+		
+	}
+	
+}

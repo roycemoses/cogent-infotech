@@ -1,0 +1,19 @@
+
+public class Rectangle {
+
+	private float length;
+	private float breadth;
+	
+	public Rectangle() { this.length = 0; this.breadth = 0; }
+	public Rectangle(float l, float b) { this.length = l; this.breadth = b; }
+	
+	// Accessor & Mutator methods (Getters & Setters)
+	public float getLength() { return length; }
+	public void setLength(float length) { this.length = length; }
+	public float getBreadth() { return breadth; }
+	public void setBreadth(float breadth) { this.breadth = breadth; }
+	
+	public calculateArea() { return this}
+	
+	
+}

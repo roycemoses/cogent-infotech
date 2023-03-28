@@ -1,0 +1,13 @@
+package employee;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) throws LowSalException {
+		
+		Scanner sc = new Scanner(System.in); 
+		Employee employee = new Employee(1, "Royce", "Officer", 750);
+		employee.printDET();
+		
+	}
+	
+}

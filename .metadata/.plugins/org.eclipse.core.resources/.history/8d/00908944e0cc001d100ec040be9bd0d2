@@ -1,0 +1,35 @@
+package employee;
+
+import java.util.Scanner;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) throws LowSalException {
+		
+		Scanner sc = new Scanner(System.in); 
+		
+		System.out.println("Please enter the employee ID:");
+		int empId = Integer.parseInt(sc.nextLine());
+		System.out.println("Please enter the name:");
+		String empName = sc.nextLine();
+		System.out.println("Please enter the designation:");
+		String designation = sc.nextLine();
+		System.out.println("Please enter the basic:");
+		double basic = Double.parseDouble(sc.nextLine());
+		
+		Employee employee;
+		try 
+		{
+			employee = new Employee(empId, empName, designation, basic);
+		}
+		catch (LowSalException e)
+		{
+			System.out.println(e.getMessage());
+		}
+		
+		employee.printDET();
+		
+		
+	}
+	
+}

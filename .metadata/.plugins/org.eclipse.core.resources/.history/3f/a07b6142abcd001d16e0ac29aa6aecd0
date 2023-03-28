@@ -1,0 +1,14 @@
+package multithreading_demo;
+
+public class MyRunnableThread implements Runnable {
+
+	MyRunnableThread(String s)
+	{
+		super();
+	}
+	
+	public void run() {
+		System.out.println("Hello!");
+	}
+	
+}

@@ -1,0 +1,15 @@
+package wrapper_classes;
+
+public class WrapperDemo {
+
+	public static void main(String[] args) {
+		
+		int x = 100; // primitive
+		Integer y = new Integer(x);
+		System.out.println(x.getClass().getName());
+		
+		
+
+	}
+	
+}

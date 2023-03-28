@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Person"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="cogent.Person"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="gl.itp.hyd65.cs65.Royce.Advisor"/>
+<fullyQualifiedTypeName name="esg.itp.shape.Rectangle"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="exceptions.InvalidAgeException"/>
+<fullyQualifiedTypeName name="exceptions_calc.UserDefinedExceptions.NegativeAmountException"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="employee.InvalidDesignationException"/>
+</qualifiedTypeNameHistroy>

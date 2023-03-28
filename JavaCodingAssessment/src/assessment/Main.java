@@ -39,7 +39,7 @@ public class Main {
 					dao.update(products, productID);
 					break;
 				case 4:
-					System.out.println("Please enter the Product ID of the Product you want to delete:");
+					System.out.println("Please enter the product ID of the Product you want to delete:");
 					productID = Integer.parseInt(sc.nextLine());
 					dao.delete(products, productID);
 					break;

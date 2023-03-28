@@ -1,0 +1,17 @@
+package inheritance;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Book book = new Book();
+		book.setTitle("Hamlet");
+		book.setAuthor("William Shakespeare");
+		book.setPrice(5.95);
+		
+		Magazine magazine = new Magazine();
+		
+		
+	}
+	
+}

@@ -1,0 +1,9 @@
+package abstraction_compartment;
+
+public class FirstClass extends Compartment {
+	@Override
+	void notice() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,5 @@
+package instrument_abstraction;
+
+public class Piano implements Instrument {
+
+}

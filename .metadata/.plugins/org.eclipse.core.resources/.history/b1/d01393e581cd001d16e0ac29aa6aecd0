@@ -1,0 +1,12 @@
+package serialization;
+
+public class Person {
+
+	private int rollNum;
+	private String name;
+	private int age;
+	private String address;
+	
+	
+	
+}

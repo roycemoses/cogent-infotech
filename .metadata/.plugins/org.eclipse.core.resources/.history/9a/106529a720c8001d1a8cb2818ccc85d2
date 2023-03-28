@@ -1,0 +1,12 @@
+package cogent;
+
+public class BookTestArray {
+	public static void main(String[] args) {
+		
+		Book book[] = new Book[5];
+		
+		
+		
+		
+	}
+}

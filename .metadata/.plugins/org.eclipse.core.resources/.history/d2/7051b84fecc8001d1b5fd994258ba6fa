@@ -1,0 +1,16 @@
+package instrument_abstraction;
+
+public class Main {
+	public static void main(String[] args) {
+	
+// 		cannot instantiate Instrument object
+//		Instrument instrument = new Instrument();
+		
+		Instrument[] instruments = new Instruments[10];
+		
+		
+		
+		
+		
+	}
+}

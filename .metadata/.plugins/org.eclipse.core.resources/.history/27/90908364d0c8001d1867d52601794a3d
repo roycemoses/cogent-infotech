@@ -1,0 +1,13 @@
+package cogent.infotech;
+
+public class Book {
+
+	private int bookID;
+	String bookName;
+	float bookPrice;
+	
+
+	
+	
+	
+}

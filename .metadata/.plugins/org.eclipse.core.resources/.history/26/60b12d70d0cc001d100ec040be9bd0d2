@@ -1,0 +1,23 @@
+package exceptions_calc;
+
+import java.util.Scanner;
+
+public class Exceptions {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		CalcAverage calcAverage = new CalcAverage();
+		System.out.println("Please enter a natural number: ");
+		int n = Integer.parseInt(sc.nextLine());
+		double avg = calcAverage.avgFirstN(n);
+		System.out.println("The average of the first N (" + n + ") natural numbers is " + avg);
+		
+		
+		
+		
+		
+		
+		
+	}
+}

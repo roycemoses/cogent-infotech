@@ -1,0 +1,8 @@
+package esg.itp.shape;
+
+public class Rectangle {
+
+	float length;
+	float breadth;
+	
+}

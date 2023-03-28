@@ -1,0 +1,16 @@
+
+public class Person {
+		
+	// data members
+	int personID;
+	String personFirstName;
+	String personLastName;
+	int personAge;
+	String personAddress;
+	
+	// default constructor
+	public Person() {
+		// nothing
+	}
+	
+}

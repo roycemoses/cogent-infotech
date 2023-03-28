@@ -1,0 +1,25 @@
+package serialization;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class SerializationDemo {
+
+	public static void main(String[] args) {
+		
+		FileOutputStream fos = null;
+		ObjectOutputStream oos = null;
+		try
+		{
+			fos = new FileOutputStream("D://Users//Rice//Documents//CogentWorkspace//TextFiles//Emp.ser");
+			oss = new ObjectOutputStream(oss);
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		
+	}
+	
+}

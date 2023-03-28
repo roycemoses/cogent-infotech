@@ -1,0 +1,28 @@
+package exceptions;
+
+import java.util.Scanner;
+
+public class InvalidAgeExceptionTest {
+
+	public void validateAge(int age) throws InvalidAgeException
+	{
+		if (age >= 18)
+			System.out.println("Valid age");
+		else
+			System.out.println("Age is not valid");
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter your age: ");
+		int age = Integer.parseInt(sc.nextLine());
+		
+		InvalidAgeExceptionTest test = new InvalidAgeExceptionTest();
+		test.validateAge();
+		
+		
+		
+	}
+	
+}

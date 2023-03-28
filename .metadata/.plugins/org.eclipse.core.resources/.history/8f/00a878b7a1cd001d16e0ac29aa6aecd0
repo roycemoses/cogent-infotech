@@ -1,0 +1,13 @@
+package multithreading;
+
+public class JoinDemo {
+
+	public static void main(String[] args) {
+		
+		static int sum, n = 0;
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,10 @@
+package polymorphism;
+
+public class Tablet extends Medicine{
+
+	void public displayLabel()
+	{
+		
+	}
+	
+}

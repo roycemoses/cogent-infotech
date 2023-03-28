@@ -1,0 +1,33 @@
+package serialization;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class PersonDeserializationDemo {
+
+	public static void main(String[] args) {
+		
+		try {
+			FileInputStream fis = new FileInputStream("D://Users//Rice//Documents//CogentWorkspace//TextFiles//Person.ser");
+			ObjectInputStream ois = new ObjectInputStream(fis);
+
+			for (;;)
+			{
+				Object obj = ois.readObject();
+				Person person = (Person)obj;
+				System.out.println("Person Roll Number: " + person.getRollNum());
+				System.out.println("Person Name: " + person.getName());
+				System.out.println("Person Age: " + person.getAge());
+				System.out.println("Person Address: " + person.getAddress());
+			}
+		} catch (Exception e) {
+			System.out.println(e);
+		} finally {
+			fis.close();
+			ois.close();
+		}
+		
+		
+	}
+	
+}

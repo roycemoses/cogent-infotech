@@ -1,0 +1,12 @@
+package abstraction;
+
+public class BicycleTest {
+
+	Bicycle bicycle = new ACMEBicycle();
+	bicycle.printStates();
+	
+	
+//	ACMEBicycle bicycle = new ACMEBicycle();
+	
+	
+}

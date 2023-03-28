@@ -1,0 +1,10 @@
+package abstraction;
+
+public class BicycleTest {
+
+	public static void main(String[] args) {
+		ACMEBicycle basdasdasdads = new ACMEBicycle();
+		b.display();
+	}
+	
+}

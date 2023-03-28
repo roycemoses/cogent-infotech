@@ -1,0 +1,19 @@
+package garbage_collection;
+
+public class GCDemo {
+
+	int objId;
+	GCDemo(int objId)
+	{
+		this.objId=objId;
+		
+		System.out.println("Created: " + this.objId);
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,20 @@
+package polymorphism;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Person p;
+		p = new Person();
+		p.setName("John");
+		p.interact();
+		
+		p = new Parent();
+		p.setName("John");
+		p.interact();
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,18 @@
+package gl.itp.hyd65.cs65.Royce;
+
+public class Advisor {
+
+	String[] message;
+	
+	Advisor()
+	{
+		message = new String[5];
+	}
+	
+	String public getAdvice()
+	{
+		
+	}
+	
+	
+}

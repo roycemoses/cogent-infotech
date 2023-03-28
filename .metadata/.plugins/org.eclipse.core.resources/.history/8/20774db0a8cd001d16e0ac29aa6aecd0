@@ -1,0 +1,19 @@
+package multithreading_demo;
+
+//public class MyThread extends Thread {
+//
+//	@Override
+//	public void run() {
+//		System.out.println("Hello!");
+//	}
+//	
+//}
+
+public class MyThread extends Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Hello!");
+	}
+	
+}

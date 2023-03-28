@@ -1,0 +1,13 @@
+package inheritance;
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		Person p = new Person();
+		Address address = new Address();
+		
+		
+	}
+	
+}

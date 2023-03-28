@@ -1,0 +1,11 @@
+package multithreading;
+
+public class ThreadPriorityTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

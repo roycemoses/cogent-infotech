@@ -1,0 +1,25 @@
+
+public class ArrayBingo {
+	public static void main(String[] args) {
+	
+		if (args.length != 2)
+		{
+			System.out.println("Please enter two integers!");
+		}
+		else
+		{
+			int array[] = {5, 10, 15, 30, 40};
+			
+			System.out.println("First number: " + args[0]);
+			System.out.println("Second number: " + args[1]);
+			
+			for(int i:array)
+			{
+				
+			}
+		}
+		
+		
+		
+	}
+}

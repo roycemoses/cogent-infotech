@@ -1,0 +1,22 @@
+package wrapper_classes;
+
+public class ConversionOfAllPrimitivesAndWrappers {
+
+	boolean boolPrimitive = true;
+	Boolean BoolObject = Boolean.valueOf(boolPrimitive);
+	boolean boolPrimitive2 = BoolObject.booleanValue();
+	
+	byte bytePrimitive = 20;
+	Byte ByteObject = Byte.valueOf(bytePrimitive);
+	byte bt2 = ByteObject.byteValue();
+	
+	char charPrimitive = 128;
+	Character CharacterObject = Character.valueOf(charPrimitive);
+	short
+	int
+	long
+	float
+	double
+	
+	
+}

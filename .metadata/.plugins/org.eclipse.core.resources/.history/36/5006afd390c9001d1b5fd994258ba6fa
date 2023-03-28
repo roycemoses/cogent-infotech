@@ -1,0 +1,12 @@
+package esg.itp.shape;
+
+public class Square implements Polygon {
+
+	float side;
+	
+	Square(float s)
+	{
+		this.side = s;
+	}
+	
+}

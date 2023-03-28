@@ -1,0 +1,11 @@
+package exceptions_calc;
+
+public class NumberDemo {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

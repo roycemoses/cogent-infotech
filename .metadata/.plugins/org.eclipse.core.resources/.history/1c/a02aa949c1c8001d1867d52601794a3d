@@ -1,0 +1,22 @@
+package polymorphism;
+
+public class SportCar extends Car {
+	
+	String AirBalloonType;
+
+	public String getAirBalloonType() {
+		return AirBalloonType;
+	}
+
+	public void setAirBalloonType(String airBalloonType) {
+		AirBalloonType = airBalloonType;
+	}
+	
+	public void display() {
+		super.display();
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,12 @@
+package exceptions_calc;
+
+public class CalcAverage {
+
+	public double avgFirstN(int N) throws IllegalArgumentException
+	{
+		double avg;
+		int sum = 0;
+		
+	}
+	
+}

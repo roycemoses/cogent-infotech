@@ -1,0 +1,29 @@
+package polymorphism;
+
+class Person {
+	
+	string personName;
+
+	public string getPersonName() {
+		return personName;
+	}
+
+	public void setPersonName(string personName) {
+		this.personName = personName;
+	}
+	
+	public void interact() {
+		System.out.println("Idle");
+	}
+	
+}
+
+public class MethodOverridingDemo {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

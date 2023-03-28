@@ -1,0 +1,28 @@
+package super_demo;
+
+class Parent
+{
+	int pAge = 50;
+	
+	public void display()
+	{
+		System.out.println("Parent Age: " + this.pAge);
+	}
+}
+
+class Child extends Parent
+{
+	int cAge = 25;
+	
+	public void display()
+	{
+		super.display();
+		System.out.println("Child age: " + this.cAge);
+	}
+}
+
+public class SuperDemo {
+
+	
+	
+}

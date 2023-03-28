@@ -1,0 +1,46 @@
+package access_modifiers;
+
+import java.util.Scanner;
+
+public class BookTest {
+	
+	public static void createBooks(Book[] books)
+	{
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < books.length; i++)
+		{
+			Book b = new Book();
+			System.out.println("Please enter the title of book " + (i+1) + ":");
+//			sc.nextLine();
+			b.setBook_title(sc.nextLine());
+			System.out.println("Please enter the price of book " + (i+1) + ":");
+			b.setBook_price(sc.nextFloat());
+			books[i] = b;
+		}
+	}
+	
+	public static void showBooks(Book[] books)
+	{
+		System.out.println("Book Title\t\tPrice");
+		for(int i = 0; i < books.length; i++)
+		{
+			System.out.println(books[i].getBook_title() + "\tRs." + books[i].getBook_price());
+		}
+	}
+	
+	public static void main(String[] args) {
+		int n = 1;
+		Book[] books = new Book[n];
+		createBooks(books);
+		System.out.println("Book price: " + books[0].getBook_price());
+		
+		for(int i = 0; i < books.length; i++)
+		{
+			
+		}
+		
+		
+	}
+	
+	
+}

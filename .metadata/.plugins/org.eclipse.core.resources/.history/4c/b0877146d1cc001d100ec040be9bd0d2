@@ -1,0 +1,26 @@
+package exceptions_calc;
+
+import java.util.Scanner;
+
+public class NumberDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter two integers: ");
+		int a = Integer.parseInt(sc.nextLine());
+		int b = Integer.parseInt(sc.nextLine());
+		Number number = new Number(a, b);
+		
+		do {
+			System.out.println("1. Add (a+b)");
+			System.out.println("1. Subtract (a-b)");
+			System.out.println("1. Multiply (a*b)");
+			System.out.println("1. Divide (a/b)");
+			System.out.println("1. Exit (a+b)");
+			
+		} while (option != 5)
+		
+	}
+	
+}

@@ -1,0 +1,13 @@
+package exceptions_calc;
+
+public class CalcAverageDemo {
+
+	public static void main(String[] args) {
+		
+		CalcAverage calcAverage = new CalcAverage();
+		System.out.println("Please enter a natural number: ");
+		
+		
+		
+	}
+}

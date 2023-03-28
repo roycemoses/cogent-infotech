@@ -1,0 +1,9 @@
+package instrument_abstraction;
+
+public class Main {
+	public static void main(String[] args) {
+	
+		Instrument instrument = new Instrument();
+		
+	}
+}

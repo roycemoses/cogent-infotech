@@ -1,0 +1,10 @@
+package polymorphism;
+
+public class Medicine {
+
+	String name;
+	String address;
+	
+	
+	
+}

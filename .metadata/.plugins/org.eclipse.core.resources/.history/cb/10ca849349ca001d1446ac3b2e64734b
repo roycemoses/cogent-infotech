@@ -1,0 +1,67 @@
+package assessment;
+
+import java.util.Scanner;
+
+public class ProductDAO {
+
+	Scanner sc = new Scanner(System.in);
+	public void create(Product[] products, int i)
+	{
+		Product product = new Product();
+		products[i] = product;
+		System.out.println("Enter the ID of Product " + (i + 1));
+		products[i].setId(Integer.parseInt(sc.nextLine()));
+		System.out.println("Enter the name of Product " + (i + 1));
+		products[i].setName(sc.nextLine());
+		System.out.println("Enter the price of Product " + (i + 1));
+		products[i].setPrice((Float.parseFloat(sc.nextLine())));
+	}
+	
+	public void read(Product[] products)
+	{
+		for(Product product:products)
+		{
+			if (product == null)
+				continue;
+			System.out.println("Product ID: " + product.getId());
+			System.out.println("Product name: " + product.getName());
+			System.out.println(String.format("Product price: %.2f", product.getPrice()));
+			System.out.println();
+		}
+	}
+	
+	public void update(Product[] products, int productID)
+	{
+		int currProductIndex = findProductIndex(products, productID);
+		
+		System.out.println("Please enter the updated details for Product #" + productID + "!");
+		
+		System.out.println("What details would you like to update for Product #" + productID + "?");
+		
+		
+		System.out.println("Enter the new ID:");
+		products[currProductIndex].setId((Integer.parseInt(sc.nextLine())));
+		System.out.println("Enter the new name:");
+		products[currProductIndex].setName(sc.nextLine());
+		System.out.println("Enter the new price:");
+		products[currProductIndex].setPrice((Float.parseFloat(sc.nextLine())));
+			
+		System.out.println("\nProduct #" + ProductID + " has successfully been updated.");
+	}
+	
+	public void delete(Product[] Products, int ProductID)
+	{
+		int currProductIndex = findProductIndex(Products, ProductID);
+		Products[currProductIndex] = null;
+		System.out.println("\nProduct #" + ProductID + " has successfully been deleted.");
+	}
+	
+	private int findProductIndex(Product[] Products, int ProductID)
+	{
+		int index = 0;
+		for(int i = 0; i < Products.length; i++)
+			if (Products[i].getProductID() == ProductID)
+				index = i;
+		return index;
+	}
+}

@@ -1,0 +1,29 @@
+package multithreading_demo;
+
+public class MyThread extends Thread {
+
+	MyThread(String s)
+	{
+		super(s);
+		MAX_PRIORITY;
+	}
+	
+	@Override
+	public void run() {
+		System.out.println("Hello! I am thread " + this.getName());
+	}
+	
+}
+
+//public class MyThread implements Runnable {
+//
+//	MyThread(String s)
+//	{
+//		super(s);
+//	}
+//	
+//	public void run() {
+//		System.out.println("Hello!");
+//	}
+//	
+//}

@@ -1,0 +1,16 @@
+package serialization;
+
+public class PersonDemo {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hi, how many records would you like to write into the file?");
+		do
+		{
+			
+			
+		} while (option != 'N')
+		
+	}
+	
+}

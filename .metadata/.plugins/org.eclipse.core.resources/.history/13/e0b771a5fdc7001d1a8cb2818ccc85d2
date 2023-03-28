@@ -1,0 +1,10 @@
+
+public class ArrayLesson {
+	public static void main(String[] args) {
+		// invalid syntax
+//		int arr[5];
+		
+		int arr = {10, 20, 30, 40 , 50};
+		
+	}
+}

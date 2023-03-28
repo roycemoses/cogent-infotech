@@ -1,0 +1,11 @@
+package streams;
+
+public class EmployeeInputStream {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

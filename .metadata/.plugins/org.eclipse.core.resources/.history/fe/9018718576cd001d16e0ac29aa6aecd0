@@ -1,0 +1,11 @@
+package streams;
+
+public class SourceToDestinationProgram {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}
