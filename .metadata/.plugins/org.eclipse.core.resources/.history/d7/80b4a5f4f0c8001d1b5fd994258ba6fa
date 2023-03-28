@@ -1,5 +1,0 @@
-package abstraction_compartment;
-
-public abstract class Compartment {
-	
-}

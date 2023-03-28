@@ -1,6 +1,0 @@
-package instrument_abstraction;
-
-public class Guitar {
-	@Override
-	void play() { System.out.println("Guitar is playing tin tin tin"); }
-}

@@ -1,9 +1,0 @@
-package abstraction;
-
-public class BicycleTest {
-
-	ACMEBicycle bicycles = new ACMEBicycle();
-	bicycles.printStates();
-	
-	
-}

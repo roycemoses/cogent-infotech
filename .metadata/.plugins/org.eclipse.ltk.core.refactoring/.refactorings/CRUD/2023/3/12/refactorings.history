@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move 3 elements to &apos;Cogent/src/abstraction&apos;&#x0D;&#x0A;- Original project: &apos;CRUD&apos;&#x0D;&#x0A;- Destination element: &apos;Cogent/src/abstraction&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     cogent.infotech.Bank.java&#x0D;&#x0A;     cogent.infotech.BankTest.java&#x0D;&#x0A;     cogent.infotech.Bicycle.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=Cogent/src&lt;abstraction" element1="/src&lt;cogent.infotech{Bank.java" element2="/src&lt;cogent.infotech{BankTest.java" element3="/src&lt;cogent.infotech{Bicycle.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1679513710947" units="3" version="1.0"/>
-</session>

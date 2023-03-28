@@ -1,5 +1,0 @@
-INDEX VERSION 1.126+D:\Users\Rice\Documents\CogentWorkspace\EclipseWorkspace\.metadata\.plugins\org.eclipse.jdt.core
-4292536490.index
-2941055390.index
-3401598750.index
-1657330681.index

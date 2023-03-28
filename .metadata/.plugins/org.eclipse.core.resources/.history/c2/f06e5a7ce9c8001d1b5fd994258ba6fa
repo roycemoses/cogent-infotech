@@ -1,8 +1,0 @@
-package abstraction;
-
-public class BicycleTest {
-
-	AACMEBicycle bicycle = new AACMEBicycle();
-	
-	
-}

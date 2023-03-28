@@ -1,8 +1,0 @@
-package inheritance;
-
-public class Person {
-
-	int personID;
-	String personName;
-	
-}
