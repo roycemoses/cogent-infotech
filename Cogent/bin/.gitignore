@@ -1,6 +1,2 @@
-/synchronization
-/thread_communication
-/synchronization_demo
-/collections
-/book_management
-/dao_implementations
+/built_in_functional_interfaces/
+/predicate_interface_student_details/
