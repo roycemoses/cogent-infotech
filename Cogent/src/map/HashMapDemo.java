@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+
 public class HashMapDemo {
 
 	public static void main(String[] args) {
@@ -30,6 +31,10 @@ public class HashMapDemo {
 		map.put("Test", 123);
 		for (String key : keyset) 
 			System.out.println("Key: " + key + "\tValue: " + map.get(key));	
+		
+			
+
+		
 		
 	}
 	
