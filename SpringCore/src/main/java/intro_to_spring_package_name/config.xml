@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!--Creating a framework for the bean-->
+	<bean name="hello" class="intro_to_spring_package_name.GreetingJavaBean"></bean>
+
+	<!-- Short-hand Setter-based dependency injection -->
+	<bean name="employee" class="intro_to_spring_package_name.EmployeeBean" p:id="19" p:name="Royce"></bean>
+
+	<!-- Setter-based dependency injection -->
+	<!--<bean name="person" class="intro_to_spring_package_name.PersonBean">
+		<property name="id" value="21"></property>
+		<property name="name" value="Chris"></property>
+		<property name="age" value="22"></property>
+		<property name="address" value="Las Vegas"></property>
+	</bean>-->
+	
+	<!-- Constructor-based dependency injection -->
+	<bean name="person" class="intro_to_spring_package_name.PersonBean">
+		<constructor-arg value="21" type="int"></constructor-arg>
+		<constructor-arg value="Chris" type="String"></constructor-arg>
+		<constructor-arg value="22" type="int"></constructor-arg>
+		<constructor-arg value="Las Vegas" type="String"></constructor-arg>
+	</bean>
+	
+	<bean name="person2" class="intro_to_spring_package_name.PersonBean">
+		<constructor-arg value="30" type="int"></constructor-arg>
+		<constructor-arg value="Charles" type="String"></constructor-arg>
+		<constructor-arg value="23" type="int"></constructor-arg>
+		<constructor-arg value="Los Angeles" type="String"></constructor-arg>
+	</bean>
+
+	<!-- Creating a bean object with a List<String> AND List<Object> object in the class -->
+	<bean name="hospital" class="intro_to_spring_package_name.Hospital">
+		<property name="name" value="Global Hospital"></property>
+		<property name="department">
+			<list>
+				<value>Front office</value>
+				<value>In Patient</value>
+				<value>Out Patient</value>
+				<value>Surgery room</value>
+			</list>
+		</property>	
+		<property name="people">
+			<list>
+				<ref bean="person"></ref>
+				<ref bean="person2"></ref>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Creating a bean object with a Map<String, Integer> object in the class -->
+	<bean name="customer" class="intro_to_spring_package_name.Customer" p:id="2001">
+		<property name="products">
+			<map>
+				<entry key="1001" value="iPhone"></entry>
+				<entry key="1002" value="Samsung"></entry>
+				<entry key="1003" value="Oppo"></entry>
+				<entry key="1004" value="Nokia"></entry>
+			</map>
+		</property>
+	</bean>
+	
+	<!-- Creating a bean object with a Set<String> object in the class -->
+	<bean name="cardealer" class="intro_to_spring_package_name.CarDealer" p:name="Rosemead Car Dealer">
+		<property name="models">
+			<set>
+				<value>BMW</value>
+				<value>Honda</value>
+				<value>BMW</value>
+				<value>BMW</value>
+				<value>BMW</value>
+				<value>Toyota</value>
+				<value>Mercedes-Benz</value>
+				<value>BMW</value>
+			</set>
+		</property>	
+	</bean>
+	
+	<!-- Simple Reference Example: Creating a bean object (Student) with a Scores object -->
+	
+	<bean name="scores" class="intro_to_spring_package_name.Scores" p:mathScore="88.5" p:physicsScore="73.1" p:chemistryScore="95.2"></bean>
+	
+ 	<bean name="student" class="intro_to_spring_package_name.Student" p:name="Royce">
+		<property name="scores">
+			<ref bean="scores"></ref>
+		</property>
+	</bean>
+	<!-- Shorthand for reference (p:<property_name>-ref="<bean>") -->
+	<!-- <bean name="student" class="intro_to_spring_package_name.Student" p:name="Royce" p:scores-ref="scores"></bean>-->
+	
+
+</beans>

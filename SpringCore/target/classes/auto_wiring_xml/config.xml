@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- <bean name="person" class="auto_wiring_xml.Person" autowire="byName"></bean> -->
+	<!-- <bean name="person" class="auto_wiring_xml.Person" autowire="byType"></bean> -->
+	<bean name="person" class="auto_wiring_xml.Person" autowire="constructor"></bean>
+	
+	<bean name="car" class="auto_wiring_xml.Car">
+		<property name="model" value="Honda"></property>
+		<property name="price" value="5000"></property>
+	</bean>
+	
+	
+	<bean name="address" class="auto_wiring_xml.Address">
+		<property name="houseNo" value="590"></property>
+		<property name="street" value="Huntington"></property>
+		<property name="city" value="Arcadia"></property>
+	</bean>
+	
+</beans>
