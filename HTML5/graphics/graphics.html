@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphics</title>
+    </head>
+    <body>
+        <canvas id="canvas1" width="1500px" height="700px" style="border: 10px solid rgb(60, 115, 243)"></canvas>
+        <script>
+            var canvas1 = document.getElementById("canvas1");
+            var context = canvas1.getContext("2d");
+            context.fillStyle = "red";
+            context.fillRect(25, 25, 150, 75); // x, y, width, height
+
+            context.fillStyle = "blue";
+            context.fillRect(100, 100, 75, 75);
+            context.font = "50pt Arial";
+            context.fillText("Royce", 200, 100);
+
+            context.beginPath();
+            context.arc(250, 350, 70, 2 * Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+
+            context.beginPath();
+            context.arc(1000, 500, 70, 2 * Math.PI, false);
+            context.fillStyle = "#6a5c82";
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+
+            context.beginPath();
+            context.arc(1000, 400, 60, 2 * Math.PI, false);
+            context.fillStyle = "#712aeb";
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+
+            context.beginPath();
+            context.arc(925, 400, 35, 2 * Math.PI, false);
+            context.fillStyle = "#bb9bf2";
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+
+            context.beginPath();
+            context.arc(1075, 400, 35, 2 * Math.PI, false);
+            context.fillStyle = "#bb9bf2";
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+
+            context.beginPath();
+            context.arc(1025, 400, 10, 2 * Math.PI, false);
+            context.fillStyle = "#4b18a3";
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+
+            context.beginPath();
+            context.arc(975, 400, 10, 2 * Math.PI, false);
+            context.fillStyle = "#4b18a3";
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+
+            context.beginPath();
+            context.arc(1000, 425, 10, 2 * Math.PI, false);
+            context.fillStyle = "#4b18a3";
+            context.fill();
+            context.lineWidth = 2;
+            context.strokeStyle = 'black';
+            context.stroke();
+
+        </script>
+    </body>
+</html>

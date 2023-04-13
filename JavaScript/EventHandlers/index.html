@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Handlers in JavaScript</title>
+        <!-- <script src="script.js"></script> -->
+        <script>
+            function yellow()
+            {
+                document.getElementById("username").style.background="yellow";
+            }
+        </script>
+    </head>
+    <body>
+        <!-- <button onclick="green()">Green</button>
+        <button onclick="blue()">Blue</button>
+        <button onclick="yellow()">Yellow</button>
+        <button onclick="purple()">Purple</button>
+        <a href="test" onmouseover="green()" onmouseout="white()">Green</button>
+        <a href="" onmouseover="blue()" onmouseout="white()">Blue</button>
+        <a href="" onmouseover="yellow()" onmouseout="white()">Yellow</button>
+        <a href="" onmouseover="purple()" onmouseout="white()">Purple</button> -->
+
+        <form>
+            <label>Enter your name</label>
+            <input type="text" id ="username" onblur="yellow()">
+            <label>Enter your password</label>
+            <input type="password" id="userpassword">
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Methods in JavaScript</title>
+    </head>
+    <body>
+        <pre>
+            <script type="text/JavaScript">
+                function sayHello(name) {
+                    window.alert("Hello " + name + "!");
+                }; 
+
+                var mySite = new Object();
+                var myBook = new Object();
+                mySite.url = "http://web.com";
+                myBook.author = "Mark";
+
+                myBook.greet = sayHello;
+                myBook.greet(myBook.author);
+
+                delete myBook.greet;
+
+            </script>
+        </pre>
+    </body>
+</html>

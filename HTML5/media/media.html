@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media</title>
+    </head>
+
+    <body>    
+        <video controls id="video1" onloadstart="this.volume=0.25" height="600" width="600" src="rice_op_1v4_clutch.mp4"></video>
+        
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="big()">Big</button>
+        <button onclick="small()">Small</button>
+        <button onclick="normal()">Normal</button>
+
+        <script>
+            var ctx = document.getElementById("video1");
+            function playPause()
+            {
+                ctx.volume="0.5";
+                if (ctx.paused)
+                {
+                    ctx.play();
+                }
+                else
+                {
+                    ctx.pause();
+                }
+            }
+            
+            function big()
+            {
+                ctx.height=1000;
+                ctx.width=1000;
+            }
+
+            function small()
+            {
+                ctx.height=300;
+                ctx.width=300;
+            }
+
+            function normal()
+            {
+                ctx.height=600;
+                ctx.width=600;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Printing Book Object Details Example</title>
+    </head>
+    <body>
+        <form name="bookdetails" onsubmit="createBook()">
+            Author: <input type="text" name="author"> <br>
+            Title: <input type="text" name="title"> <br>
+            <input type="submit" value="submit">
+        </form>
+        <pre>
+            <script type="text/javascript">
+                function concatTitleAndAuthor() 
+                { 
+                    return "\"" + this.title + "\" by " + this.author
+                }
+
+                function showAll()
+                {
+                    window.alert(this.toString()); // calling its own method
+                }
+
+                var book = new Object();
+                function createBook()
+                {
+                    book = 
+                    {
+                        author: document.bookdetails.author.value,
+                        title: document.bookdetails.title.value,
+                        print: showAll,
+                        toString: concatTitleAndAuthor
+                    }
+                    book.print();
+                }
+                
+            </script>
+        </pre>
+    </body>
+</html>

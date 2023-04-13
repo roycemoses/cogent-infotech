@@ -1,0 +1,131 @@
+<html><head>
+    <!-- The head tags include page information, e.g. metadata, as well as any included CSS and JS scripts. Everything in the head is loaded by the browser before the body. -->
+
+    <!-- The title tag defines the page's title that shows up in the browser's tab bar -->
+    <title>Dog D. Dog's Homepage</title>
+
+    <!-- The link tag lets us link CSS files to the HTML and apply the CSS to the page. The 'href="style.css"'' is a reference to the path of where the CSS file lives. -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1104.0" data-gr-ext-installed="">
+    <!-- The body tags include all page content. These objects will be rendered on the page. -->
+
+    <!-- The h1 tag is a header tag of the largest size. This header gets rendered on the page. -->
+    <h1>Dog D. Dog</h1>
+
+    <!-- Img tags lets us add images. -->
+    <div id="right">
+      <img src="L34Fib6.jpg" id="photo">
+    </div>
+
+    <div id="left">
+
+      <!--Divs and spans can be used to logically and structurally organize your page
+      Here we use divs to separate different sections of the page: about, courses, interests and pet information
+      * divs are block elements and are separated by newlines or breaks in the page
+      * spans are inline elements and are displayed without newlines between them
+    -->
+
+    <!--Each div (and any other tag) can have a class and id.
+      The class can be shared with other tags.
+      The id is unique to this tag.
+      The class and id can be selected by CSS rules to style groups of elements differently.
+    -->
+    <div class="section" id="about">
+
+      <!--An h2 header - smaller than the h1 header-->
+      <h2>About</h2>
+
+      <!--<p> tags are paragraphs have newlines before and after them-->
+      <p>Woof woof!</p>
+
+      <!--The <a> tag is a link.
+        The text between the <a> and </a> tags is the displayed text.
+        The href attribute has the link's target URL.-->
+      <p>Hi, I'm Dog. I love <a href="http://en.wikipedia.org/wiki/User_interface_design">User Interface Design</a>.</p>    
+    </div>
+
+    <div class="section" id="courses">
+        <h2>Courses</h2>
+        <p>Here are some courses I've taken:</p>
+
+        <!--Tables can be used to group text or images into rows and columns-->
+        <table>
+          <thead>
+            <!--Each <tr> is a row-->
+            <tr>
+              <!--Each <th> or <td> is a cell.
+                The number of cells in a row determines the number of columns in the table.
+              -->
+              <th>Course Number</th>
+              <th>Course Title</th>
+              <th>Semester Taken</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!--A <td> or cell can span multiple columns using the colspan attribute-->
+              <td class="enrollheader" colspan="3">For Credit</td>
+            </tr>
+            <!--We give certain rows the "currentlytaking" class, so we can color them differently in a CSS rule-->
+            <tr class="currentlytaking">
+              <td><a href="http://stellar.mit.edu/S/course/6/sp14/6.813/index.html">6.813</a></td>
+              <td>User Interface Design</td>
+              <td>Spring 2014</td>
+            </tr>     
+            <tr>
+              <td><a href="http://ai6034.mit.edu/fall12/index.php?title=Main_Page">6.034</a></td>
+              <td>Artificial Intelligence</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <td><a href="http://stellar.mit.edu/S/course/6/fa13/6.006/">6.006</a></td>
+              <td>Introduction to Algorithms</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <td class="enrollheader" colspan="3">Listener</td>
+            </tr>
+            <tr>
+              <td><a href="http://stellar.mit.edu/S/course/6/fa13/6.867/">6.867</a></td>
+              <td>Machine Learning</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <td><a href="http://db.csail.mit.edu/6.830/index.php">6.830</a></td>
+              <td>Database Systems</td>
+              <td>Fall 2012</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section" id="interests">
+        <h2>Interests</h2>
+        <!--Spans are displayed inline, but allow you to identify text in CSS rules-->
+        I am interested <span class="serious">HCI</span>, <span class="silly">memes</span>, and <span class="silly">youtube videos</span>.
+      </div>
+
+      <div class="section" id="petinfo">
+        <h2>Submit Pet Information</h2>
+        <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+
+        <!--A form allows the user/client to input information.
+            Form information can then be captured when submitted via scripts.-->
+        <form>
+          <!--The form contains several <input> elements which receive info from the user.
+          Each <input> element has a 'type' attribute, which determines if it's a textbox, radio button, etc.-->
+          <label for="petname">Name:</label>
+          <input id="petname" type="text" name="petname"><br>
+          <label for="phylum">Phylum:</label>
+          <input id="phylum" type="text" name="phylum"><br>
+          <label for="gender">Gender:</label>
+          <input id="gender" type="text" name="gender"><br>
+
+          <!--The submit-type input is a button that sends the information as name:value pairs to the form's 'action'-->
+            <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

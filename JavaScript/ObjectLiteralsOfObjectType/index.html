@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Literals of "Object" type</title>
+    </head>
+    <body>
+        <pre>
+            <script type="text/javascript">
+                // Using "this" to get properties of the current object.
+                function concatTitleAndAuthor() 
+                { 
+                    return "\"" + this.title + "\" by " + this.author
+                }
+
+                // Using "this" to get the "toString" method.
+                function showAll()
+                {
+                    window.alert(this.toString());
+                }
+
+                var book = 
+                {
+                    author: "ABC",
+                    title: "XYZ",
+                    print: showAll, // object can have functions!
+                    toString: concatTitleAndAuthor // toString data member --> calls concatTitleAndAuthor
+                };
+
+                book.print(); // this calls book's data member function "print"
+            </script>
+        </pre>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+/* body tag selector: define a default font. Never use Comic Sans. 
+   You can define backup fonts in case a user viewing the page does 
+   not have the specified fonts installed. */
+   body {
+    font-family: Helvetica, Arial, Sans-Serif;
+  }
+  
+  /* <a> tag selector:
+    set the hover properties of links within #courses element.
+  
+    text-decoration: none; gets rid of the underline on a links */
+  a {
+    color: #4f84ce;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #82ade7;
+  }
+  
+  /* active is the link when it is being clicked */
+  a:active {
+    color: white;
+  }
+  
+  /* visited is for links that have already been clicked */
+  a:visited {
+    color: #1c4c90;
+  }
+  
+  /* Table Style! */
+  /* Put borders around the cells */
+  /* Give the cells some room to breathe - add some padding! */
+  /* You can either specify 4 padding values (top right bottom left)
+     or two padding values (left/right, top/bottom),
+     or one (all sides) */
+  /* You can select multiple selectors and separate them by comma */
+  th, td { 
+    border: solid 1px black; 
+    padding: 3px 6px;
+  }
+  
+  /* Collapse or 'merge' the borders into each other*/
+  table { 
+    border-collapse: collapse; 
+  }
+  
+  /* Color every other row (tr) light grey */
+  tr:nth-child(even) {
+    background-color: #eaeaea;
+  }
+  
+  /* Color the text of currentlytaking rows */
+  tr.currentlytaking {
+    color: #337ed2;
+  }
+  
+  /* Align and style the "For Credit" and "Listener" cells */
+  td.enrollheader {
+    background-color:white;
+    text-align:center;
+    font-weight:bold;
+  }
+  
+  /* .section class selector: set the font-size of all tags with class="section" */
+  .section {
+    font-size: 16px;
+  }
+  
+  /* h2 descendants of .section class: set a background color for all h2 text in sections.
+     can use rgb (e.g. rgb(255, 255, 220), 
+      or a color name (e.g. yellow), 
+      or a hex color code (e.g. #4ed08b).
+  
+      You can also set a padding, which is the space between the content 
+      and the borders of the object. */
+  .section h2 {
+    background-color: #b6d2ec;
+    font-family: Georgia;
+    color: #2a75ba;
+    padding: 5px;
+  }
+  
+  /* span with .serious class: set font to Impact */
+  span.serious {
+    font-family: "Impact";
+  }
+  
+  /* span with .silly class: set font to Comic Sans */
+  span.silly {
+    font-family: "Comic Sans MS";
+  }   
+  
+  /* Put the image on the right */
+  #photo { 
+    width:50%;
+    height:50%;
+    float: right; 
+  }
+  
+  #left {
+    position: relative;
+    float: left;
+  }
+  
+  #right {
+    position: relative;
+    float: right;
+  }
+  
+  img {
+    margin-right: 500px;
+    margin-top: 200px;
+  }
+  
+  
+  
