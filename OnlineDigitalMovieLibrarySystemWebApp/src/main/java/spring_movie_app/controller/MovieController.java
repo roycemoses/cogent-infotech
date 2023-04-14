@@ -1,4 +1,4 @@
-package movie_app.controller;
+package spring_movie_app.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import movie_app.entity.Movie;
-import movie_app.service.MovieService;
+import spring_movie_app.entity.Movie;
+import spring_movie_app.service.MovieService;
 
 
 @RestController
@@ -24,30 +24,30 @@ public class MovieController {
 	@Autowired
 	MovieService movieService;
 	
-	@PostMapping("/movies")
+	@PostMapping("/api/movies")
 	public Movie add(@Validated @RequestBody Movie movie)
 	{
 		return movieService.save(movie);
 	}
 	
-	@GetMapping("/movies/id={movieID}")
+	@GetMapping("/api/movies/id={movieID}")
 	@ResponseBody
 	public Optional<Movie>get(@PathVariable Long movieID)
 	{
 		return movieService.get(movieID);
 	}
 	
-	@GetMapping("/movies")
+	@GetMapping("/api/movies")
 	public List<Movie> getAll() {
 		return movieService.getAll();
 	}
 	
-	@DeleteMapping("/movies/id={movieID}")
+	@DeleteMapping("/api/movies/id={movieID}")
 	public void delete(@PathVariable Long movieID) {
 		movieService.delete(movieID);
 	}
 	
-	@PutMapping("/movies")
+	@PutMapping("/api/movies")
 	public void update(@Validated @RequestBody Movie movie) {
 		movieService.update(movie);
 	}

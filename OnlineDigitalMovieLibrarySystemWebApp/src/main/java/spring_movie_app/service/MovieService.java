@@ -1,11 +1,11 @@
-package movie_app.service;
+package spring_movie_app.service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import movie_app.entity.Movie;
+import spring_movie_app.entity.Movie;
 
 @Service
 public interface MovieService {

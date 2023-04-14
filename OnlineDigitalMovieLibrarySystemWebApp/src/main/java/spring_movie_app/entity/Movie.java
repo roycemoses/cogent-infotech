@@ -1,4 +1,4 @@
-package movie_app.entity;
+package spring_movie_app.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,6 +21,6 @@ public class Movie {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long movieID;
 	private String movieName;
-	private Double moviePrice;
-	
+	private String movieGenre;
+	private String movieReleaseDate;
 }

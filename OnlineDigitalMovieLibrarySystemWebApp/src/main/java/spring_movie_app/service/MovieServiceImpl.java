@@ -1,4 +1,4 @@
-package movie_app.service;
+package spring_movie_app.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import movie_app.entity.Movie;
-import movie_app.repository.MovieRepository;
+import spring_movie_app.entity.Movie;
+import spring_movie_app.repository.MovieRepository;
 
 @Service
 public class MovieServiceImpl implements MovieService {
@@ -37,7 +37,6 @@ public class MovieServiceImpl implements MovieService {
 
 	@Override
 	public Movie update(Movie movie) {
-//		movie.setMovieID(movieID);
 		return movieRepository.save(movie);
 	}
 

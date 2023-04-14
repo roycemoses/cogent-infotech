@@ -1,4 +1,4 @@
-package movie_app.service;
+package spring_movie_app.service;
 
 import java.util.ArrayList;
 
@@ -8,8 +8,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import movie_app.entity.User;
-import movie_app.repository.UserRepository;
+import spring_movie_app.entity.User;
+import spring_movie_app.repository.UserRepository;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
@@ -19,9 +19,6 @@ public class CustomUserDetailsService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		User user = userRepository.findByUsername(username);
-//		if (user == null)
-//			throw new UsernameNotFoundException("Could not find user");
-//		return new MyUserDetails(user);
 		return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), new ArrayList<>());
 	}
 	 	
