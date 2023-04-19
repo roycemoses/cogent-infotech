@@ -1,0 +1,18 @@
+h1
+{
+    background-color:palevioletred;
+    font-size:50px;
+}
+
+#welcome
+{
+    background-color: darkcyan;
+    font-size:40px;
+}
+
+.fillerText
+{
+    background-color: rgb(104, 104, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:30px;
+}
