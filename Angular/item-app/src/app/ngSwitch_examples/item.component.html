@@ -1,0 +1,63 @@
+<p>{{title}}</p>
+
+<div class="card">
+    <div class="card-header">
+        Text input ngSwitchCase example
+    </div>
+    <div class="card-body">
+        Input string: <input type='text' [(ngModel)]="num"/>
+        
+        <div [ngSwitch]="num">
+            <div *ngSwitchCase="'1'">One</div>
+            <div *ngSwitchCase="'2'">Two</div>
+            <div *ngSwitchCase="'3'">Three</div>
+            <div *ngSwitchCase="'4'">Four</div>
+            <div *ngSwitchCase="'5'">Five</div>
+            <div *ngSwitchDefault>This is default</div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="card">
+    <div class="card-header">
+        Multiple ngSwitchCase with same condition
+    </div>
+
+    <div class="card-body">
+        <select [(ngModel)]="selectedValue1">
+            <option *ngFor="let item of items;" [value]="item.name">{{item.name}}</option>
+        </select>
+        <div [ngSwitch]="selectedValue1">
+            <p *ngSwitchCase="'One'">One is selected</p>
+            <p *ngSwitchCase="'Two'">Two is selected</p>
+            <p *ngSwitchCase="'Two'">Two Again is selected in another element</p>
+            <p *ngSwitchDefault>This is default</p>
+        </div>
+    </div>  
+</div>
+
+<br><br>
+
+<div class="card">
+    <div class="card-header">
+        Dropdown with Day Options
+    </div>
+
+    <div class="card-body">
+        <select [(ngModel)]="selectedValue2">
+            <option *ngFor="let day of days;" [value]="day.name">{{day.name}}</option>
+        </select>
+        <div [ngSwitch]="selectedValue2">
+            <p *ngSwitchCase="'Sunday'">Sunday is selected</p>
+            <p *ngSwitchCase="'Monday'">Monday is selected</p>
+            <p *ngSwitchCase="'Tuesday'">Tuesday is selected</p>
+            <p *ngSwitchCase="'Wednesday'">Wednesday is selected</p>
+            <p *ngSwitchCase="'Thursday'">Thursday is selected</p>
+            <p *ngSwitchCase="'Friday'">Friday is selected</p>
+            <p *ngSwitchCase="'Saturday'">Saturday is selected</p>
+            <p *ngSwitchDefault>Not a valid input</p>
+        </div>
+    </div>  
+</div>

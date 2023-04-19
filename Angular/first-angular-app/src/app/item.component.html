@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Item Component</title>
+    </head>
+    <body>
+        <h1 style="color:rgb(15, 137, 244)"><u>Welcome to Royce's Item Shop!</u></h1><br>
+        <table>
+            <thead>
+                <tr style="font-size: x-large; text-decoration: underline;">
+                    <th>Item No</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Brand Name</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of itemList">
+                    <td>{{item.itemNo}}</td>
+                    <td>{{item.itemName}}</td>
+                    <td style="padding: 0 25px">${{item.itemPrice}}</td>
+                    <td>{{item.itemDescription}}</td>
+                    <!-- <td><img src={{item.itemImageURL}} width="250px" length = "250px"><br></td> -->
+                    <td><img [src]='item.itemImageURL' width="250px" length = "250px"><br></td>
+                    <td style="padding: 0 25px"><input type="text" [(ngModel)]="item.itemBrandName"/><br>
+                        {{item.itemBrandName}}<br><br></td>
+                    <td><button (click)="edit(item.itemNo)">Edit</button><br><br></td>
+                    <td style="padding: 0 25px"><button (click)="delete(item.itemNo)">Delete</button><br><br></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="Form" style="display:none">
+            Enter the new item details for {{currentFormItemToEdit.itemNo}}
+            <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(currentFormItemToEdit)">
+
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" formControlName="itemName"><br>
+                
+                <label for="itemPrice">Item Price:</label>
+                <input type="text" id="itemPrice" formControlName="itemPrice"><br>
+                
+                <label for="itemDescription">Item Description:</label>
+                <input type="text" id="itemDescription" formControlName="itemDescription"><br>
+                
+                <label for="itemImageURL">Item Image URL:</label>
+                <input type="text" id="itemImageURL" formControlName="itemImageURL"><br>
+
+                <label for="itemBrandName">Item Brand Name:</label>
+                <input type="text" id="itemBrandName" formControlName="itemBrandName"><br>
+
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+    
+</html>

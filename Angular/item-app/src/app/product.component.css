@@ -1,0 +1,37 @@
+h1 {
+    font-size:60px;
+    text-decoration: underline;
+    color:rgb(132, 72, 176)
+}
+
+table {
+    background-color: rgb(32, 32, 32);
+    font-size: 50px;
+    color:rgb(68, 137, 255);
+    border-style: double;
+    border-color:aqua;
+    border-collapse: separate;
+}
+
+th {
+    border-style:outset;
+    border-color:aqua;
+}
+
+tr {
+    background-color:rgb(30, 26, 94);
+}
+
+td {
+    border-style:outset;
+    border-color:aqua;
+    padding: 5px 80px;
+}
+
+#showMessage
+{
+    font-size:30px;
+    font-style:italic;
+    font-weight:1000;
+}
+
