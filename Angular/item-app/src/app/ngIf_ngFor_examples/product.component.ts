@@ -10,6 +10,9 @@ export class ProductComponent implements OnInit {
   products = [] as any;
   title = "product";
   showMessage = true;
+  companyName = "Royce's Company";
+  mainProductName = "T-Shirt";
+  mainProductPrice = "19.91";
 
   // lifecycle function, automatically called by angular framework after the constructor of this Component finishes
   ngOnInit(): void {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from './post.service';
 
 @Component({
   selector: 'app-root',
@@ -7,21 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  products = [] as any;
-  title = "product";
+  posts:any = [];
+  constructor(private service:PostService)
+  {
+
+  }
 
   // lifecycle function, automatically called by angular framework after the constructor of this Component finishes
   ngOnInit(): void {
-    this.products = this.getProduct();
-  }
-
-  getProduct()
-  {
-    return [
-      {'id':'1','title':'Screwdriver','price':400,'stock':100},
-      {'id':'2','title':'Hammer','price':1100,'stock':50},
-      {'id':'3','title':'Axe','price':700,'stock':25}
-    ]
+    this.service.getPosts()
+      .subscribe(response=>{
+        this.posts=response;
+      });
   }
 
 }
