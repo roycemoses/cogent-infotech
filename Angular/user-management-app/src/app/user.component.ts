@@ -11,7 +11,8 @@ export class UserComponent implements OnInit {
     title = 'user-management-app';
 
     users:User[];
-    userForm:User;
+    userAddForm:User;
+    userEditForm:User;
     currUser:User;
     currUserID:number;
     toggleEditForm:boolean=false;
@@ -19,7 +20,8 @@ export class UserComponent implements OnInit {
     constructor(private userService:UserService) 
     {
         this.users = [];
-        this.userForm = new User();
+        this.userAddForm = new User();
+        this.userEditForm = new User();
         this.currUser = new User();
         this.currUserID = 0;
     }
@@ -48,18 +50,17 @@ export class UserComponent implements OnInit {
 
         this.toggleEditForm=false;
         this.userService.updateUser(this.currUser).subscribe();
+        this.userService.getUsers();
+        this.refresh();
     }
 
     delete(id:number)
     {
         this.userService.deleteUser(id).subscribe();
+        this.userService.getUsers();
+        this.refresh();
     }
-    
 
-    add(user:User)
-    {
-        this.userService.addUser(user).subscribe();
-    }
 
     onSubmitAdd(adduserform:any)
     {
@@ -71,6 +72,8 @@ export class UserComponent implements OnInit {
         console.log(adduserform.value);
 
         this.userService.addUser(this.currUser).subscribe();
+        this.userService.getUsers();
+        this.refresh();
     }
 
     refresh()
@@ -80,6 +83,8 @@ export class UserComponent implements OnInit {
 
     resetForm()
     {
-        this.userForm = new User();
+        this.userAddForm = new User();
+        this.userService.getUsers();
+        this.refresh();
     }
 }

@@ -1,19 +1,19 @@
-<form novalidate #ADD_USER_FORM="ngForm" (ngSubmit)="onSubmitAdd(ADD_USER_FORM)">
+<form novalidate #ADD_USER_FORM="ngForm" (ngSubmit)="onSubmitAdd(ADD_USER_FORM)" autocomplete="false">
     <div>
         <label for="name">Name </label>
-        <input type="text" [(ngModel)]="userForm.name" name="name" placeholder="Enter your name" required>
+        <input type="text" [(ngModel)]="userAddForm.name" name="name" placeholder="Enter your name" required>
     </div>
     <div>
         <label for="age">Age </label>
-        <input type="number" [(ngModel)]="userForm.age" name="age" placeholder="Enter your age" required>
+        <input type="number" [(ngModel)]="userAddForm.age" name="age" placeholder="Enter your age" required>
     </div>
     <div>
         <label for="salary">Salary </label>
-        <input type="number" [(ngModel)]="userForm.salary" name="salary" placeholder="Enter your salary">
+        <input type="number" [(ngModel)]="userAddForm.salary" name="salary" placeholder="Enter your salary">
     </div>
-    <button [disabled]="ADD_USER_FORM.invalid" (click)="refresh()" type="submit">Add</button>
-    <button (click)= 'resetForm()'>Reset Form</button>
+    <button [disabled]="ADD_USER_FORM.invalid" type="submit">Add</button>
 </form>
+<button (click)= 'resetForm(); refresh()'>Reset Form</button>
 
 
 <div class="container">
@@ -35,7 +35,7 @@
                         <td>{{user.salary|currency}}</td>
                         <div class="buttons">
                             <button (click)="edit(user.id);">Edit</button>
-                            <button (click)="delete(user.id); refresh()">Remove</button>
+                            <button (click)="delete(user.id)">Remove</button>
                         </div>
                     </tr>
                 </tbody>
@@ -49,19 +49,19 @@
 <div *ngIf="toggleEditForm">
     <h3>EDIT FORM</h3>
     <h4>Currently updating user #{{currUserID}}...</h4>
-    <form novalidate #ADD_USER_FORM="ngForm" (ngSubmit)="onSubmitEdit(ADD_USER_FORM)">
+    <form novalidate #EDIT_USER_FORM="ngForm" (ngSubmit)="onSubmitEdit(EDIT_USER_FORM)">
         <div>
             <label for="name">Name </label>
-            <input type="text" [(ngModel)]="userForm.name" name="name" placeholder="Enter your name" required>
+            <input type="text" [(ngModel)]="userEditForm.name" name="name" placeholder="Enter your name" required>
         </div>
         <div>
             <label for="age">Age </label>
-            <input type="number" [(ngModel)]="userForm.age" name="age" placeholder="Enter your age" required>
+            <input type="number" [(ngModel)]="userEditForm.age" name="age" placeholder="Enter your age" required>
         </div>
         <div>
             <label for="salary">Salary </label>
-            <input type="number" [(ngModel)]="userForm.salary" name="salary" placeholder="Enter your salary">
+            <input type="number" [(ngModel)]="userEditForm.salary" name="salary" placeholder="Enter your salary">
         </div>
-        <button [disabled]="ADD_USER_FORM.invalid" (click)="refresh()" type="submit">Finalize edit</button>
+        <button [disabled]="EDIT_USER_FORM.invalid" type="submit">Finalize edit</button>
     </form>
 </div>
