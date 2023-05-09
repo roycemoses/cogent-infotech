@@ -41,7 +41,7 @@ export class ItemComponent
             itemName: "ASUS TUF Gaming NVIDIA GeForce RTX 3060 V2 OC Edition Graphics Card (PCIe 4.0, 12GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II)",
             itemPrice: 409.99,
             itemDescription: "NVIDIA Ampere Streaming Multiprocessors: The building blocks for the world’s fastest, most efficient GPU, the all-new Ampere SM brings 2X the FP32 throughput and improved power efficiency.",
-            itemImageURL: "https://m.media-amazon.com/images/I/810QFGCFlnL._AC_UY218_.jpg",
+            itemImageURL: "assets/diagram.png",
             itemBrandName: "NVIDIA"
 
         },
