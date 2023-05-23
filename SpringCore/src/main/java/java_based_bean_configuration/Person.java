@@ -32,6 +32,8 @@ public class Person {
 	public void hi()
 	{
 		System.out.println("Hi, I am inside the init method!\nIn init(), write the code to reserve resources (DB Connection, call to REST APIs)");
+		// do api calls
+		// perform set methods (this.setAge(), this.setId())...
 	}
 	
 	@PreDestroy

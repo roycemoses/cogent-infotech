@@ -33,8 +33,6 @@ public class ConversionOfAllPrimitivesAndWrappers {
 	double doublePrimitive = 777.777;
 	Double DoubleObject = Double.valueOf(doublePrimitive);
 	double doublePrimitive2 = DoubleObject.doubleValue();
-	
-	
-	
+		
 	
 }
